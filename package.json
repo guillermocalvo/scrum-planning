@@ -3,27 +3,43 @@
   "//2": "https://docs.npmjs.com/files/package.json",
   "//3": "updating this file will download and update your packages",
 
-	"name":           "my-hyperdev-app",
-	"version":        "0.0.1",
-	"description":    "What am I about?",
-	"license":        "MIT"
+	"name":           "scrum-planning",
+	"version":        "0.1.0",
+	"description":    "A scrum planning application",
+	"license":        "GPL-3.0",
+	"homepage":       "https://github.com/guillermocalvo/scrum-planning",
+	"author": {
+		"name":           "Guillermo Calvo",
+		"email":          "hyperdev@guillermo.in",
+		"url":            "http://guillermo.in"
+	},
 	"keywords": [
 		"node",
 		"hyperdev",
-		"express"
+		"express",
+		"scrum"
 	],
 	"main":           "server.js",
 	"scripts": {
-		"start":        "node server.js"
+		"start":          "node --harmony_array_includes server.js"
 	},
 	"engines": {
-		"node":         "4.4.3"
+		"node":           "5.4.1"
 	},
 	"dependencies": {
-		"express":      "^4.12.4"
+		"coffee-script":  "*",
+		"express":        "^4.12.4",
+		"md5":            "^2.1.0",
+		"socket.io":      "*",
+		"cookie-parser":  "*",
+		"decorator-wrap": "*"
 	},
 	"repository": {
-		"type":         "git",
-		"url":          "https://hyperdev.com/#!/project/welcome-project"
+		"type":           "git",
+		"url":            "git+https://github.com/guillermocalvo/scrum-planning.git"
+	},
+	"bugs": {
+		"url":            "https://github.com/guillermocalvo/scrum-planning/issues",
+		"email":          "hyperdev@guillermo.in"
 	}
 }
